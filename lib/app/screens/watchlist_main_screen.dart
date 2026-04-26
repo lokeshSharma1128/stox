@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../common/items.dart';
+import '../../common/stock_items.dart';
 import '../bloc/watchlist_bloc.dart';
-import 'watchlist_screen.dart';
+import 'reorder_watchlist_screen.dart';
 
 class WatchlistHomeScreen extends StatelessWidget {
   const WatchlistHomeScreen({super.key});
@@ -91,7 +91,7 @@ class WatchlistHomeScreen extends StatelessWidget {
                                   MaterialPageRoute(
                                     builder: (_) => BlocProvider.value(
                                       value: context.read<WatchlistBloc>(),
-                                      child: EditWatchlistScreen(
+                                      child: ReorderWatchlistScreen(
                                         watchlistName: watchlistName,
                                       ),
                                     ),

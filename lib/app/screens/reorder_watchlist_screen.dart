@@ -6,16 +6,16 @@ import '../../common/stock_tile.dart';
 import '../bloc/watchlist_bloc.dart';
 import '../model/stock_model.dart';
 
-class EditWatchlistScreen extends StatefulWidget {
+class ReorderWatchlistScreen extends StatefulWidget {
   final String watchlistName;
 
-  const EditWatchlistScreen({super.key, required this.watchlistName});
+  const ReorderWatchlistScreen({super.key, required this.watchlistName});
 
   @override
-  State<EditWatchlistScreen> createState() => _EditWatchlistScreenState();
+  State<ReorderWatchlistScreen> createState() => _ReorderWatchlistScreenState();
 }
 
-class _EditWatchlistScreenState extends State<EditWatchlistScreen> {
+class _ReorderWatchlistScreenState extends State<ReorderWatchlistScreen> {
   List<Stock> localStocks = [];
 
   @override
